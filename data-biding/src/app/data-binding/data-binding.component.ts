@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './data-binding.component.html',
   styleUrls: ['./data-binding.component.css']
 })
+
 export class DataBindingComponent implements OnInit {
 
   InterpolationTitle:string = 'Interpolation'
@@ -15,6 +16,15 @@ export class DataBindingComponent implements OnInit {
   valorAtual: string = ''
   valorSalvo: string = ''
   isMouseOver: boolean = false
+
+
+  nome: string = 'abc'
+
+  pessoa: any = {
+    nome: 'Gabriel',
+    idade: 17
+  }
+
 
   getValor(){
     return 1

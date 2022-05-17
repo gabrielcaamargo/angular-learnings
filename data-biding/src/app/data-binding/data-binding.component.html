@@ -75,7 +75,7 @@
     </div>
   </article> -->
 
-  <article>
+  <!-- <article>
     <h3>Event Binding</h3>
     <div>
       <button
@@ -103,6 +103,22 @@
       >
       Passe o mouse sobre mim
     </span>
+    </div>
+  </article> -->
+
+  <article>
+    <h3>Two-way data binding</h3>
+    <div>
+      <input type="text" [ngModel]="nome" (ngModelChange)="nome = $event">
+
+      <input type="text" [(ngModel)]="nome">
+    </div>
+
+    <div>
+      <input type="text" [(ngModel)]="pessoa.nome">
+      <input type="text" [(ngModel)]="pessoa.idade">
+
+      <p>Meu nome é {{ pessoa.nome }} e tenho {{ pessoa.idade }} anos</p>
     </div>
   </article>
 
