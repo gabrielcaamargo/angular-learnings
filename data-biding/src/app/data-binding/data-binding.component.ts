@@ -25,6 +25,10 @@ export class DataBindingComponent implements OnInit {
     idade: 17
   }
 
+  nomeDoCurso: string = 'Angular | Loiane'
+  likesCount: number = 12
+  guestsCount: string = '37 visitantes hoje'
+  viewsCount: number = 23
 
   getValor(){
     return 1

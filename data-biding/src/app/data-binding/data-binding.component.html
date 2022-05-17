@@ -106,7 +106,7 @@
     </div>
   </article> -->
 
-  <article>
+  <!-- <article>
     <h3>Two-way data binding</h3>
     <div>
       <input type="text" [ngModel]="nome" (ngModelChange)="nome = $event">
@@ -120,6 +120,15 @@
 
       <p>Meu nome é {{ pessoa.nome }} e tenho {{ pessoa.idade }} anos</p>
     </div>
+  </article> -->
+
+  <article>
+    <h3>Input/Output Properties</h3>
+
+    <app-curso [nome]="nomeDoCurso"></app-curso>
+    <app-curso [likes]="likesCount"></app-curso>
+    <app-curso [views]="viewsCount"></app-curso>
+    <app-curso [guests]="guestsCount"></app-curso>
   </article>
 
 </section>
