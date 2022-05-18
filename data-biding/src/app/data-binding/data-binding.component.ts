@@ -26,9 +26,12 @@ export class DataBindingComponent implements OnInit {
   }
 
   nomeDoCurso: string = 'Angular | Loiane'
-  likesCount: number = 12
-  guestsCount: string = '37 visitantes hoje'
-  viewsCount: number = 23
+
+  valorInicial:number = 15
+
+  onMudouValor(evento:any){
+    console.log(evento.novoValor)
+  }
 
   getValor(){
     return 1

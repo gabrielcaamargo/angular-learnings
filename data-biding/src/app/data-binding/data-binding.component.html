@@ -122,13 +122,16 @@
     </div>
   </article> -->
 
-  <article>
+  <!-- <article>
     <h3>Input/Output Properties</h3>
 
     <app-curso [nome]="nomeDoCurso"></app-curso>
-    <app-curso [likes]="likesCount"></app-curso>
-    <app-curso [views]="viewsCount"></app-curso>
-    <app-curso [guests]="guestsCount"></app-curso>
+  </article> -->
+
+  <article>
+    <h3>Output Properties</h3>
+
+    <contador [valor]="valorInicial" (mudouValor)="onMudouValor($event)"></contador>
   </article>
 
 </section>
