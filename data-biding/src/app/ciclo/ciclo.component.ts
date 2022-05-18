@@ -7,7 +7,7 @@ import { Component, OnInit, OnChanges, DoCheck, OnDestroy, Input } from '@angula
 })
 export class CicloComponent implements OnInit, OnChanges, DoCheck, OnDestroy {
 
-  @Input() valorInicial: number = 10
+  @Input() valorInicial: number = 0
 
   constructor() {
     this.log('constructor')
