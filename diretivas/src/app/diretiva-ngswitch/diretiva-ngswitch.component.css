@@ -1,0 +1,22 @@
+.navbar{
+  background-color: #222;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+a{
+  color: #FFF;
+  text-decoration: none;
+}
+
+
+a:hover{
+  color: #AAA;
+}
+
+li{
+  display: inline;
+  margin-right: 20px;
+}
+
