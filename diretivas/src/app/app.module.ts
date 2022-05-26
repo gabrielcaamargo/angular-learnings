@@ -7,7 +7,7 @@ import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
 @NgModule({
   declarations: [
     AppComponent,
-    DiretivaNgifComponent,
+    DiretivaNgifComponent
   ],
   imports: [
     BrowserModule
