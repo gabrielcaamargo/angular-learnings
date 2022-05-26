@@ -35,3 +35,15 @@
 <div [hidden]="mostrarCursos">
   Sem cursos no momento
 </div>
+
+<h5>Removendo o * e usando template</h5>
+
+<ng-template [ngIf]="mostrarCursos">
+  <div>Lista de cursos aqui - 1</div>
+</ng-template>
+
+<button (click)="onShowCourses()">Show Courses</button>
+
+<div *ngIf="showCourses">
+  Show Courses is active
+</div>
