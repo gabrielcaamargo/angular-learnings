@@ -1,0 +1,7 @@
+<i class="fa-solid"
+  [ngClass]="{
+    'fa-heart': meuFavorito,
+    'fa-heart-circle-bolt': !meuFavorito
+  }"
+  (click)="changeState()"
+></i> <br/>
